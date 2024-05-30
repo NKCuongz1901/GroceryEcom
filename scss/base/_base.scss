@@ -8,7 +8,34 @@ html {
     font-size: 62.5%;
 }
 
+
+
 body {
     font-size: 1.6rem;
     font-family: Gordita, sans-serif;
+    color: var(--text-color);
+    background-color: var(--body-bg-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    font-family: inherit;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: inherit;
+}
+
+input,
+textarea,
+select {
+    font-family: inherit;
+    color: inherit;
+}
+
+.icon {
+    filter: var(--icon-color);
 }

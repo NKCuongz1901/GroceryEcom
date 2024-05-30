@@ -1,0 +1,131 @@
+@use '../abstracts';
+
+.dropdown {
+    position: absolute;
+    left: 0;
+    padding-top: 54px;
+    display: none;
+    min-width: min(1240px, 100%);
+
+    &__inner {
+        --inner-max-height: min(582px, 100vh - 158px);
+        position: relative;
+        max-height: var(--inner-max-height);
+        padding: 30px;
+        border-radius: 20px;
+        background: var(--dropdown-bg-color);
+        box-shadow: 0px 40px 90px 20px var(--dropdown-shadow-color);
+
+
+        &::before {
+            content: url("../icons/drop-down-around.svg");
+            position: absolute;
+            top: -13px;
+            left: var(--arrow-left-pos);
+            translate: -50%;
+            fill: var(--dropdown-arrow-color);
+        }
+    }
+}
+
+.top-menu {
+    --main-column-width: 292px;
+    position: relative;
+    max-height: calc(var(--inner-max-height) - 60px);
+
+    &__main {
+        max-height: inherit;
+        width: var(--main-column-width);
+        border-right: 1px solid var(--border-right-color);
+        overflow-y: auto;
+    }
+}
+
+.menu-column {
+    display: flex;
+    gap: 14px;
+
+    +.menu-column {
+        margin-top: 30px;
+    }
+
+    &__icon {
+        flex-shrink: 0;
+        position: relative;
+        width: 36px;
+        height: 36px;
+
+        &-1 {
+            width: 30px;
+            height: 30px;
+            object-fit: cover;
+        }
+
+        &-2 {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 24px;
+            height: 24px;
+            object-fit: cover;
+        }
+
+        @include abstracts.breakpoint(xl) {
+            display: none;
+        }
+    }
+
+    &__content {
+        flex: 1;
+    }
+
+    &__header {
+        margin-top: 5px;
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 150%;
+        color: var(--title-colo);
+
+    }
+
+    &__list {
+        margin-top: 12px;
+    }
+
+    &__item {
+        &:hover .sub-menu {
+            display: grid;
+        }
+    }
+
+    &__link {
+        display: block;
+        margin-top: 14px;
+        color: var(--link-color);
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 142.857%;
+
+        &:hover {
+            color: #0071DC;
+            font-weight: 500;
+        }
+    }
+}
+
+.sub-menu {
+    display: none;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    position: absolute;
+    inset: 0 0 0 var(--main-column-width);
+    padding-left: 30px;
+    overflow-y: auto;
+
+    &__no-main {
+        max-height: calc(var(--inner-max-height) - 60px);
+        display: grid;
+        position: initial;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
