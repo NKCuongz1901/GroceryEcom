@@ -1,14 +1,18 @@
 <div class="container">
     <div class="top-bar">
-        <button><img src="./assets/icons/more.svg" alt="" class="icon top-bar__more"></button>
+        <button class="top-bar__more js-toggle d-none d-lg-block" toggle-target="#navbar"><img
+                src="./assets/icons/more.svg" alt="" class="icon top-bar__more--icon"></button>
 
         <div class="logo">
             <img src="./assets/icons/icon-logo.svg" alt="grocerymart" class="logo__img">
             <h1 class="logo__heading">grocerymart</h1>
         </div>
-        <nav class="navbar">
+        <nav id="navbar" class="navbar hide">
+            <button class="navbar__close-btn js-toggle" toggle-target="#navbar">
+                <img src="./assets/icons/arrow-left.svg" alt="">
+            </button>
             <ul class="navbar__list js-dropdown-list">
-                <li class="navbar__item"><a href="" class="navbar__link">Departments
+                <li class="navbar__item"><a href="#!" class="navbar__link">Departments
                         <img src="./assets/icons/Arrow-down.svg" alt="" class="icon navbar__around-down">
                     </a>
                     <div class="dropdown">
@@ -16,14 +20,14 @@
                             <div class="top-menu">
                                 <div class="top-menu__main">
                                     <div class="menu-column">
-                                        <div class="menu-column__icon">
+                                        <div class="menu-column__icon d-lg-none">
                                             <img src="./assets/img/category/category-1.1.svg" alt=""
                                                 class="menu-column__icon-1">
                                             <img src="./assets/img/category/category-1.2.svg" alt=""
                                                 class="menu-column__icon-2">
                                         </div>
                                         <div class="menu-column__content">
-                                            <h2 class="menu-column__header">All Departments</h2>
+                                            <h2 class="menu-column__header d-lg-none">All Departments</h2>
                                             <ul class="menu-column__list">
                                                 <li class="menu-column__item"><a href=""
                                                         class="menu-column__link">Savings & Featured Shops</a>
@@ -585,7 +589,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="navbar__item"><a href="" class="navbar__link">Grocery
+                <li class="navbar__item"><a href="#!" class="navbar__link">Grocery
                         <img src="./assets/icons/Arrow-down.svg" alt="" class="icon navbar__around-down">
                     </a>
                     <div class="dropdown">
@@ -795,7 +799,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="navbar__item"><a href="" class="navbar__link">Beauty
+                <li class="navbar__item"><a href="#!" class="navbar__link">Beauty
                         <img src="./assets/icons/Arrow-down.svg" alt="" class="icon navbar__around-down">
                     </a>
                     <div class="dropdown">
@@ -1007,6 +1011,7 @@
                 </li>
             </ul>
         </nav>
+        <div class="navbar__overlay js-toggle" toggle-target="#navbar"></div>
         <div class="top-act">
             <div class="top-act__group top-act__group--single">
                 <button class="top-act__btn">
