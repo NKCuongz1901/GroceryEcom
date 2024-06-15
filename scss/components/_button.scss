@@ -39,3 +39,48 @@
         margin-top: 6px;
     }
 }
+
+//buttons
+.btn {
+    height: 46px;
+    background-color: #9E9DA8;
+    padding: 0 20px;
+    border-radius: 6px;
+    font-size: 1.8rem;
+    font-weight: 500;
+
+    +.btn {
+        margin-left: 20px;
+    }
+
+    &--text {
+        background-color: transparent;
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: #9E9DA8;
+    }
+
+    &--primary {
+        background-color: #FFB700;
+    }
+
+    &--outline {
+        background-color: transparent;
+        border: 1px solid #D2D1D6;
+    }
+
+    &--rounded {
+        border-radius: 99px;
+    }
+
+    [disabled],
+    &--disabled {
+        opacity: 0.5;
+        pointer-events: none;
+    }
+
+    &:hover {
+        opacity: 0.9;
+        user-select: none;
+    }
+}
