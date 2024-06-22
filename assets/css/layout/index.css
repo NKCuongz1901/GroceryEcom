@@ -23,6 +23,11 @@
   position: relative;
   z-index: 1;
 }
+@media (max-width: 767.98px) {
+  .top-bar {
+    justify-content: space-between;
+  }
+}
 
 .navbar {
   margin-left: 129px;

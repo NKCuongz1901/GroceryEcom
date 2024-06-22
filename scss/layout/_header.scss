@@ -26,6 +26,10 @@
     @extend %flexItemsCenter;
     z-index: 1;
 
+    @include abstracts.breakpoint(md) {
+        justify-content: space-between;
+    }
+
 }
 
 .navbar {

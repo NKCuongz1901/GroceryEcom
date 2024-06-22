@@ -3,7 +3,7 @@
 html {
     --text-color: #1A162E;
     --icon-color: brightness(0) saturate(100%) invert(7%) sepia(43%) saturate(984%) hue-rotate(211deg) brightness(95%) contrast(96%);
-    --body-bg-color: #fff;
+    --body-bg-color: #f6f6f6;
     --header-bg-color: #EEEEEE;
     --link-color: #1A162E;
     --group-bg-color: #FFF;
@@ -20,5 +20,6 @@ html {
     --dropdown-bg-color:#FFF;
     --dropdown-shadow-color: rgba(200, 200, 200, 0.40);
     --border-right-color:#D2D1D6;
-
+    //Sign up
+    --auth-bg-color:#ffff;
 }
