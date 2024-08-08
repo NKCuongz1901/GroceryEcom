@@ -56,20 +56,7 @@
     &__form {
         margin-top: 30px;
 
-        &-label {
-            display: block;
-            font-size: 2.2rem;
-            font-weight: 500;
-            line-height: 145.455%x;
 
-            &--small {
-                font-size: 1.4rem;
-                font-weight: 500;
-                line-height: 142.857%;
-                margin-bottom: 10px;
-            }
-
-        }
 
         &-group {
             margin-top: 20px;
@@ -110,8 +97,7 @@
             }
         }
 
-        &-text-input,
-        &-select-wrap {
+        &-text-input {
             border-radius: 6px;
             border: 1px solid #D2D1D6;
         }
@@ -163,50 +149,10 @@
             margin-left: 12px;
         }
 
-        &-select-wrap {
-            display: flex;
-            align-items: center;
-            height: 48px;
-        }
 
-        &-select {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0 14px;
-            width: var(--width, 108px);
-            height: calc(100% - 10px);
-            color: #1A162E;
-            font-size: 1.4rem;
-            font-weight: 500;
-            line-height: 142.857%;
-            cursor: pointer;
-        }
 
-        &-select+&-select {
-            border-left: 1px solid #D2D1D6;
-        }
 
-        &-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px 20px;
-        }
 
-        &-tag {
-            font-size: 1.4rem;
-            font-weight: 500;
-            line-height: 20px;
-            color: #9E9DA8;
-            padding: 6px 12px;
-            border-radius: 6px;
-            background: #F8F8FB;
-            transition: color 0.25s;
-
-            &:hover {
-                color: #1A162E;
-            }
-        }
     }
 
     //End form

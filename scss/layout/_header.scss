@@ -178,6 +178,14 @@
 
     }
 
+    &__btn--wrap {
+        position: relative;
+
+        &:hover .act-dropdown {
+            display: block;
+        }
+    }
+
     &__title {
         color: var(--title-color);
         font-size: 1.5rem;
@@ -198,5 +206,135 @@
         border-radius: 8px;
         box-shadow: 0px 4px 14px 2px rgba(0, 0, 0, 0.08);
         cursor: pointer;
+    }
+}
+
+.act-dropdown {
+    position: absolute;
+    top: 42px;
+    right: -60px;
+    width: min(600px, 100vw);
+    padding-top: 65px;
+    display: none;
+
+
+    &__inner {
+        position: relative;
+        padding: 30px;
+        border-radius: 20px;
+        background: #fff;
+        box-shadow: 0px 40px 90px 20px rgba(200, 200, 200, 0.40);
+    }
+
+    &__arrow {
+        position: absolute;
+        top: -52px;
+        right: 10px;
+    }
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+
+
+    }
+
+    &__title {
+        color: #1A162E;
+        font-size: 2.2rem;
+        font-weight: 500;
+        line-height: 145.455%;
+    }
+
+    &__see-all {
+        color: #0071DC;
+        font-size: 2.2rem;
+        font-weight: 400;
+        line-height: 145.455%;
+    }
+
+    &__bottom {
+        border-top: 1px solid #ececec;
+        border-bottom: 1px solid #ececec;
+        padding: 30px 0;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__label,
+    &__value {
+        color: #1A162E;
+        font-feature-settings: 'clig' off, 'liga' off;
+
+        font-size: 2.2rem;
+        font-weight: 400;
+        line-height: 145.455%;
+        margin-bottom: 20px;
+
+        &--bold {
+
+            font-weight: 500;
+
+        }
+    }
+
+    &__checkout {
+        margin-top: 30px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__btn {
+        background-color: #FFB700 !important;
+        min-width: 278px;
+
+    }
+
+
+
+}
+
+.cart-preview-item {
+    text-align: left;
+
+    &:hover {
+        opacity: 0.9;
+    }
+
+    &__wrap {
+        position: relative;
+        padding-top: 100%;
+        border: 1.5px solid #ebebeb;
+        border-radius: 10px;
+    }
+
+    &__thumb {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    &__title {
+        margin-top: 14px;
+        color: #1A162E;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 142.857%;
+    }
+
+    &__price {
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 146.667%;
+        color: #1A162E;
+        margin-bottom: 30px;
     }
 }

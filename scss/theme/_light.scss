@@ -22,4 +22,16 @@ html {
     --border-right-color:#D2D1D6;
     //Sign up
     --auth-bg-color:#ffff;
+    --intro-text-color: #1A162E;
+
+    @include abstracts.breakpoint(md) {
+        --auth-intro-color: #ffff;
+
+    }
+
+    //product-detail
+    --product-page-bg:#fff;
+    //breadcrumbs
+    --breadcrumbs-bg:#F6F6F6;
+    --breadscrumbs-box-shadow:rgba(237, 237, 246, 0.20);
 }

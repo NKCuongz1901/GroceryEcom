@@ -16,11 +16,12 @@
         align-items: center;
         justify-content: center;
         gap: 50px;
+        background-color: var(--auth-intro-color);
 
         &-text {
             max-width: 412px;
 
-            color: #1A162E;
+            color: var(--intro-text-color);
             font-size: 1.8rem;
             font-weight: 500;
             line-height: 144.444%;
@@ -83,7 +84,7 @@
         font-size: 3rem;
         font-weight: 500;
         line-height: 146.667%;
-        color: #1A162E;
+        color: var(--intro-text-color);
     }
 
     &__desc {
@@ -93,12 +94,16 @@
         font-weight: 500;
         line-height: 146.667%;
         width: 460px;
-        padding: 0 30px;
+        padding: 0 20px;
     }
 
     &__form {
         margin-top: 60px;
         width: 100%;
+
+        &-reset {
+            margin-top: 0;
+        }
     }
 
     &__link {
@@ -122,5 +127,9 @@
         font-size: 1.8rem;
         font-weight: 400;
         line-height: 144.444%;
+    }
+
+    &__message {
+        margin-top: 20px;
     }
 }
