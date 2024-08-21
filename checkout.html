@@ -86,7 +86,7 @@
                                                     <img src="./assets/icons/heart2.svg" alt="">
                                                     Save
                                                 </button>
-                                                <button class="cart-item__ctrl-btn">
+                                                <button class="cart-item__ctrl-btn js-toggle" toggle-target="#dialog">
                                                     <img src="./assets/icons/trash.svg" alt="">
                                                     Delete
                                                 </button>
@@ -130,7 +130,7 @@
                                                     <img src="./assets/icons/heart2.svg" alt="">
                                                     Save
                                                 </button>
-                                                <button class="cart-item__ctrl-btn">
+                                                <button class="cart-item__ctrl-btn js-toggle" toggle-target="#dialog">
                                                     <img src="./assets/icons/trash.svg" alt="">
                                                     Delete
                                                 </button>
@@ -174,7 +174,7 @@
                                                     <img src="./assets/icons/heart2.svg" alt="">
                                                     Save
                                                 </button>
-                                                <button class="cart-item__ctrl-btn">
+                                                <button class="cart-item__ctrl-btn js-toggle" toggle-target="#dialog">
                                                     <img src="./assets/icons/trash.svg" alt="">
                                                     Delete
                                                 </button>
@@ -260,6 +260,16 @@
     <script>
         load("#footer", "./templates/footer.html")
     </script>
+    <div id="dialog" class="dialog hide">
+        <div class="dialog__content">
+            <div class="dialog__text">Are you sure to delete this item ?</div>
+            <div class="dialog__bottom">
+                <button class="btn btn--text dialog__btn js-toggle " toggle-target="#dialog">Cancel</button>
+                <button class="btn btn--primary dialog__btn ">Confirm</button>
+            </div>
+        </div>
+        <div class="dialog__overlay js-toggle" toggle-target="#dialog"></div>
+    </div>
 </body>
 
 </html>
