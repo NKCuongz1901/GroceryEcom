@@ -1,0 +1,89 @@
+.payment-card {
+    background-color: var(--bg-color);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 0;
+    position: relative;
+
+    &__img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+
+    }
+
+    &__top {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    &__type {
+        color: #FFF;
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 142.857%;
+    }
+
+    &__numb {
+        color: #FFF;
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 144.444%;
+        margin-top: 37px;
+    }
+
+    &__bottom {
+        display: flex;
+        margin-top: 20px;
+        align-items: center;
+    }
+
+    &__label {
+        color: #FFF;
+        font-size: 0.8rem;
+        font-weight: 500;
+        line-height: 175%;
+        display: block;
+    }
+
+    &__value {
+        color: #FFF;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 140%;
+        display: block;
+
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        margin-right: 70px;
+        margin-left: 40px;
+    }
+
+    &__desc {
+        margin-bottom: 16px;
+    }
+}
+
+.add-card {
+    padding: 56px 89px;
+    border-radius: 10px;
+    border: 1px dashed #D2D1D6;
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        color: #D2D1D6;
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 142.857%;
+        gap: 14px;
+    }
+}
