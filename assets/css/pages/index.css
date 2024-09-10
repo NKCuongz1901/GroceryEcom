@@ -789,4 +789,11 @@
   width: 24px;
 }
 
+.new-card__form--bottom {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
 /*# sourceMappingURL=index.css.map */

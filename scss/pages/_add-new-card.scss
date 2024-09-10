@@ -1,0 +1,9 @@
+.new-card {
+    &__form--bottom {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+}
